@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Alura.WebAPI.WebApp.Formatters;
+using Microsoft.IdentityModel.Tokens;
+using System;
 
 namespace Alura.ListaLeitura.WebApp
 {

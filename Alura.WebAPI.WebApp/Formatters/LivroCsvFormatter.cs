@@ -20,6 +20,11 @@ namespace Alura.WebAPI.WebApp.Formatters
             SupportedEncodings.Add(Encoding.UTF8);
         }
 
+        protected override bool CanWriteType(Type type)
+        {
+            return type == typeof(LivroApi);
+        }
+
         public override Task WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
         {
             var livroEmCsv = "";
